@@ -30,11 +30,11 @@ x = [1,1,4,4]
 y = [2,3,2,3] 
 plot(x,y,'r*') 
 plot(x[:2],y[:2])  
-
 axis('off')
 imshow(im)
 show()
 '''
+
 
 
 width = 6
@@ -44,7 +44,7 @@ dim = width * length
 i_2 = [[1,   1,  1,  1,  1,  1],     #2
      [ -1,  -1, -1, -1, -1,  1],     #
      [  1,   1,  1,  1,  1,  1],     #
-     [  1,  -1, -1, -1, -1, -1],
+     [  1,  -1, -1, -1, -1, -1],     #
      [  1,  -1, -1, -1, -1, -1],     #
      [  1,   1,  1,  1,  1,  1]]     #
                                      #
@@ -110,6 +110,7 @@ def NET(W, X, distortedArr, arr, countRec):
 idol = []           #инициализируем эталоны и записываем их векторами
 for i in range(3):
     idol.append([])
+
 getVector(idol[0], i_2)
 getVector(idol[1], i_4)
 getVector(idol[2], i_8)
