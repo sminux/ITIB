@@ -178,7 +178,6 @@ for num in range(3):
             print(distortedArr[num][i:i + 6])     #берем со срезом
             i += 6
         probability = [1]*3             #вероятность распознавания
-
         for i in range(dim):
             if distortedArr[num][i] != idol[0][i]:
                 probability[0] = 0
